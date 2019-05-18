@@ -1,0 +1,107 @@
+﻿*{margin: 0;padding: 0;}
+body{width: 100%;height: 100%;}
+.model{width: 100%;height: 100%;background: rgba(0,0,0,.2);position: fixed;top:0;left: 0;display: none}
+.model.ac{display: block}
+#Revoke{position: absolute;z-index: 2}
+.rest{display: none}
+#content{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    background: #F8F8FF;
+    z-index: 1;
+    display: none;
+}
+#content.on{display: none;}
+#content.ac{display: block}
+#title{
+    width: 600px;
+    height: 40px;
+    background: #eb7350;
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 1em;
+    font-weight: 600;
+    color: white;
+    font-family:  SimSun, "宋体", sans-serif;
+    position: relative;
+    cursor: move;
+}
+#title span{position: absolute;right: 30px;cursor: pointer;}
+#article{margin-left: 22px;}
+#article #sec{
+    height: 30px;
+    line-height: 30px;
+}
+#article #sec span{
+    font-size: 18px;
+    color: #424242;
+}
+#article #sec input{
+    width: 400px;
+    height: 18px;
+}
+#article #text{
+    width: 600px;
+    position: relative;
+}
+#article #text span{
+    font-size: 20px;
+    margin-top: 0px;
+}
+#article #text textarea{
+    width: 492px;
+    height: 250px;
+}
+#article #Release-btn{
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    right: 83px;
+    bottom: 10px;
+    background: #ff8140;
+    border: 1px solid #f77c3d;
+}
+/*发布的内容*/
+#addCont{
+    width: 600px;
+    height: 768px;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    border: 1px solid;
+    display: none;
+    overflow: auto;
+}
+#addCont.ac{display: block}
+#addCont header{
+    width: 100%;
+    height: 50px;
+    background: greenyellow;
+    position: relative;
+}
+#addCont header div{
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    display: flex;
+    justify-content: space-around;align-items: center;
+}
+#addCont header div a{
+    width: 80px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #ff8140;
+}
+#addCont header div a:hover{text-decoration: underline}
+#addCont .block{
+    width: 560px;
+    min-height: 50px;
+    border:1px solid;
+    margin: 20px;
+}

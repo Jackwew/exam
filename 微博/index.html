@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微博</title>
+    <link rel="stylesheet" href="css/release.css">
+    <script src="js/tools.js"></script>
+</head>
+<body>
+    <button id="Release">发布微博</button>
+    <button id="Revoke" class="rest">撤回消息</button>
+    <div id="addCont">
+        <header>
+            <div>
+                <a href="javascript:;">关注</a>
+                <a href="javascript:;">热点</a>
+            </div>
+        </header>
+<!--        <div id="block" class="block">-->
+<!--           <div id="username">发表主题：<span>猪猪侠</span></div>-->
+<!--            <div id="time">发布时间：<span>2019年5月17日21：33</span></div>-->
+<!--            <div id="nr">发布内容：<span>起诉医院10张图片索赔4.2万[doge]】16日，-->
+<!--                浙江海宁市人民法院审理了一起著作权侵权纠纷案。海宁一医院因在官方微信中使用10张图片，-->
+<!--                被视觉中国旗下汉华易美公司以侵害作品信息网络传播权为由，告上法庭。-->
+<!--                原告请求法院判被告删除并停止使用侵权作品，赔偿原告损失4万元、</span></div>-->
+<!--        </div>-->
+    </div>
+    <div id="content">
+        <p id="title">发表今日动态<span id="delBtn">X</span></p>
+        <div id="article">
+            <p id="sec"><span>发表主题：</span><input type="text" value="" placeholder="写下您发布的标题" id="theme"></p>
+            <div id="text">
+                <span>发布内容：</span><br><textarea id="essay"></textarea>
+            </div>
+            <button id="Release-btn">发布</button>
+        </div>
+    </div>
+    <div class="model"></div>
+<script src="js/release.js"></script>
+<script src="js/drag.js"></script>
+</body>
+</html>
