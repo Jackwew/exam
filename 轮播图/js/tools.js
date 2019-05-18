@@ -1,4 +1,4 @@
-let tools = {
+﻿let tools = {
 	$: function (selector, isAll, parent) {
 		parent = parent || document;
 		if (isAll) {
@@ -8,7 +8,7 @@ let tools = {
 	},
 
 	 getStyle: function (obj, attr) {
-	 		return getComputedStyle(obj, false)[attr];   //针对非ie
+	 		return getComputedStyle(obj, false)[attr];
 	 },
 	//运动函数
 	move2: function (obj, attr, end, fn) {
